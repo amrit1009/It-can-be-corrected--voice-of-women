@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Share Your Story</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdf6f9;
+      color: #333;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #e91e63;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d81b60;
+    }
+  </style>
+</head>
+<body>
+  <h1>Share Your Story</h1>
+  <p>We believe in the power of voices. Tell us your story — anonymously or with your name. You are not alone.</p>
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <label for="name">Name (Optional):</label>
+    <input type="text" id="name" name="name" placeholder="Anonymous" />
+
+    <label for="email">Email (Optional):</label>
+    <input type="email" id="email" name="_replyto" placeholder="Only if you'd like a response" />
+
+    <label for="message">Your Story:</label>
+    <textarea id="message" name="message" rows="8" required placeholder="Write your story here..."></textarea>
+
+    <button type="submit">Submit Story</button>
+  </form>
+</body>
+</html>
